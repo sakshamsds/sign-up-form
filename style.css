@@ -1,0 +1,139 @@
+:root {
+    --default-black-border: 1px solid black;
+
+    /* --total-height: 730px; */
+    --total-height: 100vh;
+    --gap: 0.75rem;
+
+    --dark-yellow: rgb(119, 97, 0);
+    --yellow: rgb(255, 191, 0);
+    --white: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    border: var(--default-black-border);
+    height: var(--total-height);
+    margin: 0;
+}
+
+/* left container */
+.left-container {
+    width: 1000px;
+    background-image: url(./images/bookshelf.jpg);
+    background-size: 100% 100%;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo-div {
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-div>img {
+    width: 200px;
+}
+
+.logo-div>.name {
+    font-size: 32px;
+}
+
+.credits {
+    position: relative;
+    top: calc(var(--total-height) - 130px)
+}
+
+.logo-div,
+.credits {
+    background-color: rgba(0, 0, 0, 0.702);
+}
+
+.credits>a {
+    color: var(--yellow);
+}
+
+.credits>a:visited {
+    color: var(--yellow);
+}
+
+
+
+
+
+
+
+
+/* right container */
+
+.right-container {
+    border: var(--default-black-border);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(270deg, var(--white), rgb(255, 250, 182));
+}
+
+.quote,
+.details,
+.enter {
+    padding: 32px;
+
+}
+
+.quote {
+    border: var(--default-black-border);
+    height: calc(var(--total-height)/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 24px;
+    gap: var(--gap);
+}
+
+.details {
+    border: var(--default-black-border);
+    height: calc(var(--total-height)/3);
+}
+
+.enter {
+    border: var(--default-black-border);
+    height: calc(var(--total-height)/3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    align-items: flex-start;
+}
+
+
+.enter>button {
+    background-color: var(--dark-yellow);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    color: var(--white);
+}
+
+.enter>div>a {
+    color: var(--dark-yellow);
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* footer */
+.footer {
+    border: var(--default-black-border);
+    text-align: end;
+}
